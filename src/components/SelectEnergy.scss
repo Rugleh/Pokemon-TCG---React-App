@@ -1,0 +1,62 @@
+.icon{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    transition: 200ms all;
+    display: inline-block;
+    border: none;
+
+    &:hover{
+        filter: saturate(200%);
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    img{
+        height: 60%;
+        width: 60%;
+        margin: 20%;
+    }
+    
+}
+
+.Grass{
+    background: #5FBD58;
+    box-shadow: 0 0 20px #5fbd58;
+}
+
+.Lightning{
+    background: #F2D94E;
+    box-shadow: 0 0 20px #f2d94e;
+}
+
+.Fighting{
+    background: #D3425F;
+    box-shadow: 0 0 20px #d3425f;
+}
+
+.Fire {
+    background: #FBA54C;
+    box-shadow: 0 0 20px #fba54c;
+}
+
+.Colorless{
+    background: #A0A29F;
+    box-shadow: 0 0 20px #a0a29f;
+}
+
+.Psychic{
+    background: #FA8581;
+    box-shadow: 0 0 20px #fa8581;
+}
+
+.Water{
+    background: #539DDF;
+    box-shadow: 0 0 20px #539ddf;
+}
+
+button > * {
+    pointer-events: none;
+}
+

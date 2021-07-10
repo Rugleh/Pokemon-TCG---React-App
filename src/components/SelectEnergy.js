@@ -17,7 +17,7 @@ export const SelectEnergy = ({ setEnergy }) => {
 
   const types = [
     { name: "Colorless", icon: ColorlessIcon },
-    { name: "Fighting",  icon: FightingIcon },
+    { name: "Fighting", icon: FightingIcon },
     { name: "Fire", icon: FireIcon },
     { name: "Grass", icon: GrassIcon },
     { name: "Lightning", icon: LightningIcon },
@@ -28,8 +28,13 @@ export const SelectEnergy = ({ setEnergy }) => {
   return (
     <div className="py-4">
       {types.map((type) => (
-        <button className={'icon mx-2 my-2 '+type.name} key={type.name} value={type.name} onClick={handleButton}>
-          <img src={type.icon} alt={type.icon}/>
+        <button
+          className={"icon mx-2 my-2 " + (type.name).toLowerCase()}
+          key={type.name}
+          value={type.name}
+          onClick={handleButton}
+        >
+          <img src={type.icon} alt={type.icon} />
         </button>
       ))}
     </div>

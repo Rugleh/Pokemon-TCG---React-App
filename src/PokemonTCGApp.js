@@ -8,7 +8,7 @@ export const PokemonTCGApp = () => {
   return (
     <div className="container py-4">
       <div className="text-center">
-        <h1>Pokemon TCG APP</h1>
+        <h1>Pokémon TCG Base Set - React App</h1>
         <SelectEnergy setEnergy={setEnergy} />
       </div>
 

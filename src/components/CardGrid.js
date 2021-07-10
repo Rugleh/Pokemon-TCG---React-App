@@ -2,8 +2,8 @@ import React from "react";
 import { useFetchCards } from "../hooks/useFetchCards";
 import { CardGridItem } from "./CardGridItem";
 
-export const CardGrid = ({ energyType }) => {
-  const { data: images, loading } = useFetchCards(energyType);
+export const CardGrid = ({ setType, energyType }) => {
+  const { data: images, loading } = useFetchCards(setType, energyType);
 
   return (
     <div className="py-4">

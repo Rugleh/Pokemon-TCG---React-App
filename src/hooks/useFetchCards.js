@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import { getCards } from '../helpers/getCards'
 
-export const useFetchCards = ( energyType ) => {
+export const useFetchCards = (setType, energyType ) => {
 
     const [state, setState] = useState({
         data:[],
@@ -9,11 +9,11 @@ export const useFetchCards = ( energyType ) => {
     })
 
     useEffect(() => {
-        getCards(energyType).then(imgs => setState({
+        getCards(setType, energyType).then(imgs => setState({
             data: imgs,
             loading: false
         }))
-    }, [energyType])
+    }, [setType, energyType])
 
 
     return state;
